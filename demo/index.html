@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>f-offline-cross-storage demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+
+    <link rel="import" href="../f-offline-cross-storage.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </head>
+  <body>
+
+    <div class="vertical-section-container centered">
+      <h3>Basic f-offline-cross-storage Demo</h3>
+      <demo-snippet>
+        <template is="dom-bind">
+          <f-offline-cross-storage
+            hub-url="https://auth-hub-staging.zamok2.com"
+            key="[[key]]" value="{{somevalue}}"></f-offline-cross-storage>
+          <label>Key:</label><br /><input type="text" value="{{key::input}}"></input><br />
+          <label>Value:</label><br /><input type="text" value="{{somevalue::input}}"></input>
+        </template>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>
