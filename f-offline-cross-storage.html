@@ -46,20 +46,11 @@ Wrapper of f-cross-storage element, providing offline support
         },
       },
 
-      observers: [
-        '_valueChanged(value)',
-      ],
-
       _persistedChanged(persisted) {
-        console.log("persisted", persisted);
         if (!this.value) {
           this.value = persisted;
         }
       },
-
-      _valueChanged(value) {
-        console.log("value", value);
-      }
 
     });
   </script>
