@@ -19,12 +19,16 @@
     <div class="vertical-section-container centered">
       <h3>Basic f-offline-cross-storage Demo</h3>
       <demo-snippet>
-        <template is="dom-bind">
-          <f-offline-cross-storage
-            hub-url="https://auth-hub-staging.zamok2.com"
-            key="[[key]]" value="{{somevalue}}"></f-offline-cross-storage>
-          <label>Key:</label><br /><input type="text" value="{{key::input}}"></input><br />
-          <label>Value:</label><br /><input type="text" value="{{somevalue::input}}"></input>
+        <template>
+          <dom-bind>
+            <template>
+              <f-offline-cross-storage
+                hub-url="https://auth-hub-staging.zamok2.com"
+                key="[[key]]" value="{{somevalue}}"></f-offline-cross-storage>
+              <label>Key:</label><br /><input type="text" value="{{key::input}}"></input><br />
+              <label>Value:</label><br /><input type="text" value="{{somevalue::input}}"></input>
+            </template>
+          </dom-bind>
         </template>
       </demo-snippet>
     </div>

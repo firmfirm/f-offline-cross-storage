@@ -2,7 +2,7 @@
 
 Wrapper of [&lt;f-cross-storage&gt;](https://github.com/firmfirm/f-cross-storage) element, providing offline support.
 
-More information, API documentation and demo are in [Component page](https://firmfirm.github.io/f-offline-cross-storage/).
+More information, API documentation and demo are in [Component page](https://firmfirm.github.io/f-offline-cross-storage/) (**temporarily unavailable**).
 
 ## Install the Polymer-CLI
 

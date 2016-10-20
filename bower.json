@@ -1,6 +1,6 @@
 {
   "name": "f-offline-cross-storage",
-  "version": "0.2.6",
+  "version": "2.0.0",
   "license": "GPL-3.0",
   "authors": [
     "Martynas <martynas@firmfirm.co>"
@@ -22,14 +22,18 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.6.0",
-    "app-storage": "PolymerElements/app-storage#^0.9.6",
-    "f-cross-storage": "firmfirm/f-cross-storage#^0.2.1"
+    "polymer": "Polymer/polymer#2.0-preview",
+    "app-storage": "PolymerElements/app-storage#2.0-preview",
+    "f-cross-storage": "firmfirm/f-cross-storage#^2.0.0",
+    "promise-polyfill": "PolymerLabs/promise-polyfill#2.0-preview"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-    "web-component-tester": "^4.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1"
+  },
+  "resolutions": {
+    "webcomponentsjs": "v1",
+    "polymer": "2.0-preview"
   }
 }

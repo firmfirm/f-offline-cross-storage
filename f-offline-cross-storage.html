@@ -1,6 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
-
 <link rel="import" href="../f-cross-storage/f-cross-storage.html">
 
 <!--
@@ -11,11 +10,9 @@ Wrapper of f-cross-storage element, providing offline support
 -->
 <dom-module id="f-offline-cross-storage">
   <template>
-    <f-cross-storage
-      hub-url="[[hubUrl]]"
-      key="[[key]]"
-      value={{value}}
-    />
+    <!-- inherited behavior -->
+    <f-singleton key="{{key}}" value="{{value}}"></f-singleton>
+    <!-- extension -->
     <app-indexeddb-mirror
       key="[[key]]"
       session="[[session]]"
@@ -26,32 +23,32 @@ Wrapper of f-cross-storage element, providing offline support
   </template>
 
   <script>
-    Polymer({
+    FirmFirm.OfflineCrossStorage = class OfflineCrossStorage extends FirmFirm.CrossStorage {
 
-      is: 'f-offline-cross-storage',
-      behaviors: [FInterface.CrossStorage],
-
-      properties: {
-        /**
-         * Any string value that uniquely identifies the current session.
-         * Whenever this value changes, the data stored at key will be deleted.
-         * This is useful for handling scenarios such as user session changes (e.g., logout).
-         */
-        session: {
-          type: String,
-        },
-        _persistedData: {
-          type: Object,
-          observer: '_persistedChanged'
-        },
-      },
+      static get is() { return 'f-offline-cross-storage'; }
+      static get config() {
+        return {
+          properties: {
+            /**
+             * Any string value that uniquely identifies the current session.
+             * Whenever this value changes, the data stored at key will be deleted.
+             * This is useful for handling scenarios such as user session changes (e.g., logout).
+             */
+            session: String,
+            _persistedData: {
+              type: Object,
+              observer: '_persistedChanged'
+            },
+          },
+        };
+      }
 
       _persistedChanged(persisted) {
-        if (!this.value) {
+        if (!this.value && this.value !== persisted) {
           this.value = persisted;
         }
-      },
-
-    });
+      }
+    }
+    customElements.define(FirmFirm.OfflineCrossStorage.is, FirmFirm.OfflineCrossStorage);
   </script>
 </dom-module>
