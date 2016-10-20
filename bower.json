@@ -24,8 +24,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#2.0-preview",
     "app-storage": "PolymerElements/app-storage#2.0-preview",
-    "f-cross-storage": "firmfirm/f-cross-storage#^2.0.0",
-    "promise-polyfill": "PolymerLabs/promise-polyfill#2.0-preview"
+    "promise-polyfill": "PolymerLabs/promise-polyfill#2.0-preview",
+    "f-cross-storage": "firmfirm/f-cross-storage#^2.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
