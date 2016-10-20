@@ -1,0 +1,6 @@
+{
+  "name": "f-offline-cross-storage-documentation",
+  "dependencies": {
+    "f-offline-cross-storage": "git@github.com:firmfirm/f-offline-cross-storage.git#master"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "app-storage",
+  "authors": [
+    "The Polymer Authors"
+  ],
+  "description": "Web Components for managing user data in web apps",
+  "main": [
+    "app-storage-behavior.html",
+    "app-network-status-behavior.html",
+    "app-localstorage/app-localstorage-document.html",
+    "app-indexeddb-mirror/app-indexeddb-mirror.html"
+  ],
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "https://github.com/PolymerElements/app-storage",
+  "private": true,
+  "dependencies": {
+    "polymer": "polymer/polymer#2.0-preview"
+  },
+  "devDependencies": {
+    "web-component-tester": "^4.0.0",
+    "paper-input": "polymerelements/paper-input#^1.0.0",
+    "moment": "^2.12.0",
+    "paper-styles": "polymerelements/paper-styles#^1.0.0",
+    "font-roboto": "polymerelements/font-roboto#^1.0.0",
+    "iron-flex-layout": "polymerelements/iron-flex-layout#^1.0.0",
+    "iron-icon": "polymerelements/iron-icon#^1.0.0",
+    "paper-fab": "polymerelements/paper-fab#^1.0.0",
+    "iron-icons": "polymerelements/iron-icons#^1.0.0",
+    "paper-button": "polymerelements/paper-button#^1.0.0",
+    "platinum-sw": "polymerelements/platinum-sw#^1.3.0",
+    "promise-polyfill": "polymerlabs/promise-polyfill#^1.0.0",
+    "test-fixture": "PolymerElements/test-fixture#custom-elements-v1"
+  },
+  "ignore": [],
+  "resolutions": {
+    "webcomponentsjs": "v1",
+    "test-fixture": "custom-elements-v1",
+    "polymer": "2.0-preview"
+  },
+  "_release": "90bc8830bc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "2.0-preview",
+    "commit": "90bc8830bcac861ac6baa91909429b8a8ef44f46"
+  },
+  "_source": "git://github.com/PolymerElements/app-storage.git",
+  "_target": "2.0-preview",
+  "_originalSource": "PolymerElements/app-storage"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "f-offline-cross-storage",
+  "version": "2.0.3",
+  "license": "GPL-3.0",
+  "authors": [
+    "Martynas <martynas@firmfirm.co>"
+  ],
+  "description": "Wrapper of f-cross-storage element, providing offline support",
+  "main": "f-offline-cross-storage.html",
+  "homepage": "https://github.com/firmfirm/f-cross-storage/",
+  "keywords": [
+    "web-components",
+    "local",
+    "storage",
+    "cross",
+    "domain",
+    "offline",
+    "polymer"
+  ],
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#2.0-preview",
+    "app-storage": "PolymerElements/app-storage#2.0-preview",
+    "promise-polyfill": "PolymerLabs/promise-polyfill#2.0-preview",
+    "f-cross-storage": "firmfirm/f-cross-storage#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1"
+  },
+  "resolutions": {
+    "webcomponentsjs": "v1",
+    "polymer": "2.0-preview"
+  }
+}

@@ -1,0 +1,26 @@
+<script>
+/**
+ * `FInterface.CrossStorage` exposes public interface of `<f-cross-storage>`.
+ *
+ * To be used in it's wrappers, stubs or replacements.
+ *
+ * @polymerBehavior
+ */
+FInterface.CrossStorage = Polymer.Utils.dedupingMixin(function(superClass) {
+  return class CrossStorage extends superClass {
+    static get config() {
+      return {
+        properties: {
+          /*
+           * URL to your cross-storage hub
+           */
+          hubUrl: {
+            type: String,
+            reflectToAttribute: true
+          }
+        }
+      };
+    }
+  }
+});
+</script>
