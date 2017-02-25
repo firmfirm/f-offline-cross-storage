@@ -26,19 +26,17 @@ Wrapper of f-cross-storage element, providing offline support
     FirmFirm.OfflineCrossStorage = class OfflineCrossStorage extends FirmFirm.CrossStorage {
 
       static get is() { return 'f-offline-cross-storage'; }
-      static get config() {
+      static get properties() {
         return {
-          properties: {
-            /**
-             * Any string value that uniquely identifies the current session.
-             * Whenever this value changes, the data stored at key will be deleted.
-             * This is useful for handling scenarios such as user session changes (e.g., logout).
-             */
-            session: String,
-            _persistedData: {
-              type: Object,
-              observer: '_persistedChanged'
-            },
+          /**
+           * Any string value that uniquely identifies the current session.
+           * Whenever this value changes, the data stored at key will be deleted.
+           * This is useful for handling scenarios such as user session changes (e.g., logout).
+           */
+          session: String,
+          _persistedData: {
+            type: Object,
+            observer: '_persistedChanged'
           },
         };
       }
