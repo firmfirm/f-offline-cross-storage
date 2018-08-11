@@ -1,6 +1,6 @@
 {
   "name": "f-offline-cross-storage",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Wrapper of f-cross-storage element, providing offline support",
   "scripts": {
     "start": "polymer serve --npm"
